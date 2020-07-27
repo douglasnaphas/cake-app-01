@@ -10,7 +10,7 @@ plugins:
 
 functions:
     function:
-        handler: index.php
+        handler: function.php
         description: ""
         layers:
             - ${bref:layer.php-73}
@@ -23,3 +23,4 @@ package:
         - ".git/**"
         - "composer.phar"
         - "exclude/**"
+        - "node_modules/**"
