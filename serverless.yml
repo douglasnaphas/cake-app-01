@@ -11,11 +11,15 @@ plugins:
 functions:
     function:
         handler: index.php
-        description: ''
+        description: ""
         layers:
             - ${bref:layer.php-73}
 
 # Exclude files from deployment
 package:
     exclude:
-        - 'tests/**'
+        - "tests/**"
+        - "infra/**"
+        - ".git/**"
+        - "composer.phar"
+        - "exclude/**"
