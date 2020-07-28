@@ -1,4 +1,5 @@
 SHELL = /bin/sh
+PORT = 8000
 
 install:	install-prod
 
@@ -19,4 +20,4 @@ invoke:
 	serverless invoke -f $(function)
 
 run:
-	php -S localhost:8000 index.php
+	php -S localhost:$(PORT) index.php
