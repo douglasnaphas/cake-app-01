@@ -9,6 +9,14 @@ plugins:
     - ./vendor/bref/bref
 
 functions:
+    website:
+        handler: index.php
+        layers:
+            - ${bref:layer.php-73-fpm}
+        # This section contains the URL routing configuration of API Gateway
+        events:
+            - http: "ANY /"
+            - http: "ANY /{proxy+}"
     function:
         handler: function.php
         description: ""
