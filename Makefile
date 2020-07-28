@@ -17,3 +17,6 @@ deploy:
 # AWS_PROFILE=my_profile make invoke function=function
 invoke:
 	serverless invoke -f $(function)
+
+run:
+	php -S localhost:8000 index.php
